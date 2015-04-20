@@ -1,28 +1,42 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Start up, pre configured template for new Rails App.
 
-Things you may want to cover:
+Featured:
 
-* Ruby version
+gem 'rails', '4.1.8'
 
-* System dependencies
+gem 'pg'
+gem 'draper'
+gem 'decent_exposure'
+gem 'decent_decoration'
+gem 'devise'
+gem 'simple_form', '~> 3.1.0rc'
+gem 'bootstrap-sass', '~> 3.1.0'
+gem 'haml-rails'
+gem 'sass-rails', github: 'rails/sass-rails'
+gem 'coffee-rails'
+gem 'uglifier'
+gem 'quiet_assets'
+gem 'jquery-rails'
+gem 'therubyracer', platforms: :ruby
+gem 'travis'
+gem 'ffaker'
+gem 'konf'
 
-* Configuration
+group :development do
+  gem 'spring'
+end
 
-* Database creation
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'shoulda-matchers'
+  gem 'pry'
+end
 
-* Database initialization
+group :test do
+  gem 'database_cleaner'
+end
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+ruby '2.1.5'
