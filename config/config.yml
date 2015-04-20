@@ -1,0 +1,11 @@
+defaults: &defaults
+  template_name: 'Template'
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
